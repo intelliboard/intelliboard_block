@@ -4,7 +4,7 @@ Designed as a Moodle block, the IntelliBoard Block provides immediate course and
 
 The IntelliBoard block also provides the role-appropriate IntelliBoard links (i.e. Learner Dashboard, Instructor Dashboard, IntelliBoard.net).
 
-Prior to installing the IntelliBoard Block, please install the IntelliBoard plugin.  For more information, visit our [Support page][support].
+Prior to installing the IntelliBoard Block, please install the [IntelliBoard plugin][intelliboard].  For more information, visit our [Support page][support].
 
 ## Features
 
@@ -18,8 +18,8 @@ Prior to installing the IntelliBoard Block, please install the IntelliBoard plug
 Requirements
 ------------
 
-Moodle 2.6 or greater.
-IntelliBoard local plugin
+* Moodle 2.6 or greater.
+* IntelliBoard local plugin.
 
 ## Download
 
@@ -59,6 +59,7 @@ Licensed under the [GNU GPL License][license].
 ![Course Live Stream][livestream]
 
 [intelliboard_github]: https://github.com/intelliboard/intelliboard_block
+[intelliboard]: https://github.com/intelliboard/intelliboard
 [block_doc]: http://docs.moodle.org/20/en/Installing_contributed_modules_or_plugins#Block_installation
 [issues]: https://github.com/intelliboard/intelliboard_block/issues
 [license]: http://www.gnu.org/copyleft/gpl.html
