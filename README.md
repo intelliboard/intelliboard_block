@@ -1,10 +1,10 @@
-# IntelliBoard Block
+# IntelliBoard Block ![Travis branch](https://travis-ci.org/intelliboard/intelliboard_block.svg?branch=master)
 
 Designed as a Moodle block, the IntelliBoard Block provides immediate course and/or activity data to a Moodle user.  Depending on preferred configuration, Moodle users can see course and activity completion, visits, time spent, grades and more.
 
 The IntelliBoard block also provides the role-appropriate IntelliBoard links (i.e. Learner Dashboard, Instructor Dashboard, IntelliBoard.net).
 
-Prior to installing the IntelliBoard Block, please install the [IntelliBoard plugin][intelliboard].  For more information, visit our [Support page][support].
+Prior to installing the IntelliBoard Block, please install the [IntelliBoard plugin][intelliboard]. For more information, visit our [Support page][support].
 
 ## Features
 
