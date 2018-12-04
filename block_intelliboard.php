@@ -155,20 +155,20 @@ class block_intelliboard extends block_base {
         $menu .= html_writer::start_tag('div', array('class' => 'external-links'));
         if (isloggedin() and !$canupdate) {
             $url = new moodle_url('/local/intelliboard/student/index.php');
-            $icon = $OUTPUT->pix_icon('i/user', '', 'moodle', array('id'=>'intelliboard-navcontent'));
+            $icon = html_writer::empty_tag('img',['width'=>'20','src'=>"$CFG->wwwroot/blocks/intelliboard/images/ios-person.svg"]);
             $menu .= html_writer::link($url, $icon .' '. get_string('s3', 'block_intelliboard'), array('target' => '_blank', 'class' => 'external-link'));
         }
         if (isloggedin() and $canupdate) {
             $url = new moodle_url('/local/intelliboard/instructor/index.php');
-            $icon = $OUTPUT->pix_icon('i/outcomes', '', 'moodle', array('id'=>'intelliboard-navcontent'));
+            $icon = html_writer::empty_tag('img',['width'=>'20','src'=>"$CFG->wwwroot/blocks/intelliboard/images/pie-graph.svg"]);
             $menu .= html_writer::link($url, $icon .' '. get_string('s2', 'block_intelliboard'), array('target' => '_blank', 'class' => 'external-link'));
         }
         if (is_siteadmin() and $canupdate) {
             $url = new moodle_url('/local/intelliboard/index.php');
-            $icon = $OUTPUT->pix_icon('i/scales', '', 'moodle', array('id'=>'intelliboard-navcontent'));
+            $icon = html_writer::empty_tag('img',['width'=>'20','src'=>"$CFG->wwwroot/blocks/intelliboard/images/podium.svg"]);
             $menu .= html_writer::link($url, $icon .' '. get_string('s1', 'block_intelliboard'), array('target' => '_blank', 'class' => 'external-link'));
 
-            $icon = $OUTPUT->pix_icon('i/publish', '', 'moodle', array('id'=>'intelliboard-navcontent'));
+            $icon = html_writer::empty_tag('img',['width'=>'20','src'=>"$CFG->wwwroot/blocks/intelliboard/images/earth.svg"]);
             $menu .= html_writer::link('https://intelliboard.net', $icon .' '. get_string('s4', 'block_intelliboard'), array('target' => '_blank', 'class' => 'external-link'));
         }
 
@@ -176,8 +176,8 @@ class block_intelliboard extends block_base {
 
         $content = html_writer::start_tag('div', array('class' => 'intelliboard-block'));
         $content .= html_writer::start_tag('div', array('class' => 'intelliboard-block-nav'));
-        $content .= $OUTPUT->pix_icon('a/view_list_active', '', 'moodle', array('id'=>'intelliboard-navcontent'));
-        $content .= $OUTPUT->pix_icon('e/fullscreen', '', 'moodle', array('id'=>'intelliboard-resize'));
+        $content .= html_writer::empty_tag('img',['width'=>'20','id'=>'intelliboard-navcontent','src'=>"$CFG->wwwroot/blocks/intelliboard/images/drag.svg"]);
+        $content .= html_writer::empty_tag('img',['width'=>'20','id'=>'intelliboard-resize','src'=>"$CFG->wwwroot/blocks/intelliboard/images/arrow-expand.svg"]);
         $content .= html_writer::end_tag('div');
 
         $content .= html_writer::start_tag('div', array('class' => 'intelliboard-navcontent'));
