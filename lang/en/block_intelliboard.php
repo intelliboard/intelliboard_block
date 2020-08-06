@@ -78,3 +78,4 @@ $string['s41'] = 'Low';
 $string['s42'] = 'Course';
 $string['s43'] = 'Widgets to display';
 $string['s44'] = 'Please go to the IntelliBoard Block Configuration';
+$string['privacy:metadata'] = 'The Email Admin plugin does not store user data.';
